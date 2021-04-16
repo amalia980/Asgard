@@ -3,11 +3,14 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     width: 100%;
     height: 100vh;
+    
 }
 
 .wrapper {
@@ -29,36 +32,129 @@ body {
     width: 60%;
 }
 
-#language {
-   display: flex;
-   flex-direction: row-reverse;
-}
-
-.form-container {
+.split-right > .form-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
-.form-wrap {
-    border-style: hidden;
-    width: 30rem;
-    height: 50rem;
-    background-color:gray;
-    
+/*dropdown language*/
+#language {
+   font-size: 1rem;
+    border: none;
+    color: #C0C1C5;
 }
 
-form > label,button {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column: auto;
-    width: 30rem;
+.dropdown {
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
 }
+
+/*Sign up to Asgard*/
+
+.sign-asgard {
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+/*already have an account?*/
+.log-in {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #BBBDBF;
+    margin: 0.6rem 0 1.7rem 0;
+}
+
+.log-in > a {
+    text-decoration: none;
+    color: #7FADF7;
+}
+
 
 /*google sign up*/
 .google-signup {
     display: flex;
-    flex-direction: row;;
+    flex-direction: row;
+}
+
+.google-svg {
+    margin-left: 1rem;
+}
+.google-button { 
+    width: 23.5rem;
+    height: 3rem;
+    border-style: solid;
+    border-color: #D5D6D8;
+    background-color: white;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+}
+
+button > a {
+    text-decoration: none;
+    color: black;
+    margin: 0 auto;
+}
+
+/*facebook and apple*/
+.box-icon {
+    height: 3rem;
+    width: 3rem;
+    background-color: #D5D6D8;
+    border-radius: 5px;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+/*- OR -*/
+.or {
+    color: #999A9E;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+/*form*/
+
+.form-container {
+    border-style: solid;
+    width: 50rem;
+    height: 70%;
+    margin-top: 2rem;
+}
+
+#form > label,div,button {
+    display: grid;
+    grid-template-columns: auto;
+    grid-column: auto;
+}
+
+#form > label {
+    color: #999A9E;
+}
+
+.input-fields {
+    width: 31.5rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    border-style: none;
+    border-bottom-style: solid;
+    border-color: #999A9E;
+    margin-bottom: 1rem;
+}
+
+/*password*/
+input[type=password] {
+    font-size: 1rem;
+}
+
+.password-checkbox {
+    margin-bottom: 0.3rem;
 }
 
 /*password input svg*/
@@ -71,7 +167,7 @@ form > label,button {
 
 .line {
     width: 6rem;
-    height: 2px;
+    height: 4px;
     background-color: green;
     margin-right: 5px;
 }
@@ -80,4 +176,9 @@ form > label,button {
     width: 6rem;
     height: 2px;
     background-color: black;
+}
+/*button form*/
+.button {
+    width: 29rem;
+    height: 3rem;
 }
