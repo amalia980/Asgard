@@ -21,6 +21,7 @@ body {
 
 .split-left {
     width: 40%;
+    height: 100vh;
     flex: 1;
     background-image: url("hey.jpg");
     background-repeat: no-repeat;
@@ -30,6 +31,7 @@ body {
 .split-right{
     display: flex;
     width: 60%;
+    height: 100vh;
 }
 
 .split-right > .form-wrap {
@@ -63,7 +65,7 @@ body {
 .log-in {
     font-size: 1.3rem;
     font-weight: lighter;
-    color: #BBBDBF;
+    color: #999A9E;
     margin: 0.6rem 0 1.7rem 0;
 }
 
@@ -77,6 +79,7 @@ body {
 .google-signup {
     display: flex;
     flex-direction: row;
+    
 }
 
 .google-svg {
@@ -91,6 +94,7 @@ body {
     border-radius: 5px;
     display:flex;
     align-items: center;
+    
 }
 
 button > a {
@@ -103,7 +107,7 @@ button > a {
 .box-icon {
     height: 3rem;
     width: 3rem;
-    background-color: #D5D6D8;
+    background-color: #D6D7D9;
     border-radius: 5px;
     margin-left: 1rem;
     display: flex;
@@ -122,9 +126,9 @@ button > a {
 /*form*/
 
 .form-container {
-    border-style: solid;
+    border-style: hidden;
     width: 64%;
-    height: 70%;
+    height: 75%;
     margin-top: 2rem;
 }
 
@@ -136,49 +140,58 @@ button > a {
 
 #form > label {
     color: #999A9E;
+    font-weight: bold;;
 }
 
 .input-fields {
-    width: 30.3rem;
-    height: 3rem;
+    width: 30.2rem;
+    height: 2.5rem;
     font-size: 1.3rem;
     border-style: none;
     border-bottom-style: solid;
-    border-color: #999A9E;
+    border-color: #CCCDCF;
+    border-width: 2px;
     margin-bottom: 1rem;
 }
 
 /*password and svg*/
-input[type=password] {
-    font-size: 1rem;
+.password-input {
+    width: 30.5rem;
+    height: 2.5rem;
+    border-style: none;
+    border-bottom-style: solid;
+    border-color: #CCCDCF;
+    border-width: 2px;
+    font-size: 2rem;
 }
- .password {
+
+ .password-container {
      display: flex;
-     flex-direction: row;
+     flex-direction: row-reverse;
      position: relative;
+     color: gray;
  }
 
- .eye-svg {
+ .eye {
      position: absolute;
+     margin: 0.5rem 1rem 0 0 ;
+     color: gray;
  }
-
- /*margin for password and terms and servives checkbox*/
-
-.password, .checkbox{
-    margin-bottom: 1rem;
-}
 
 /*password strength*/
+.password-strength {
+    margin-top: 0.5rem;
+}
 .password-lines {
     display: flex;
     flex-direction: row;
-    margin-top: 0.7rem;
+    margin-top: 0.5rem;
 }
 
 .line {
     width: 7rem;
     height: 0.3rem;
-    background-color: green;
+    background-color: #69CC99;
     margin-right: 0.4rem;
     border-radius: 5px;
 }
@@ -186,21 +199,27 @@ input[type=password] {
 .line-4 {
     width: 7rem;
     height: 0.3rem;
-    background-color: #999A9E;
+    background-color: #CCCDCF;
     border-radius: 5px;
 }
 
 /*checkbox*/
-.checkbox {
-    font-weight: lighter;
+
+.checkbox-info {
+    color: #999A9E;
+    font-weight: bold;
+    margin-top: 3rem;
 }
 
-.checkbox > a {
+.checkbox-info > a{
     text-decoration: none;
+    color: #7FADF7;
+    font-weight: bold;
 }
+
 /*button form*/
 .button {
-    width: 30.3rem;
+    width: 30.2rem;
     height: 3rem;
     margin-top: 2rem;
     border-radius: 5px;
