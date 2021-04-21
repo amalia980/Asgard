@@ -1,10 +1,27 @@
-@import url("media.css");
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
     font-family: 'Roboto', sans-serif;
+}
+
+@keyframes colors {
+    0% {
+	    background-position: 0% 100%;
+    }
+
+    25% {
+        background-position: 100% 100%;
+    }
+
+    50% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
 }
 
 body {
@@ -20,7 +37,7 @@ body {
 }
 
 .split-left {
-    width: 40%;
+    width: 100%;
     height: 100vh;
     flex: 1;
     background-image: url("hey.jpg");
@@ -28,6 +45,19 @@ body {
     background-size: cover;
 }
 
+/*Asgard*/
+header > h2 {
+    margin: 2rem 0 0 2rem;
+}
+/*a cloud based community..*/
+header > p {
+    margin: 1rem 0 0 2rem;
+    width: 18rem;
+    color: #999A9E;
+    font-weight: bold;
+}
+
+/*form right */
 .split-right{
     display: flex;
     width: 60%;
@@ -42,23 +72,43 @@ body {
 }
 
 /*dropdown language*/
-#language {
+.language {
    font-size: 1rem;
     border: none;
     color: #C0C1C5;
+    cursor: pointer;
 }
 
 .dropdown {
     position: absolute;
     right: 3rem;
-    top: 2rem;
+    top: 2rem; 
 }
 
 /*Sign up to Asgard*/
 
 .sign-asgard {
     font-size: 2.8rem;
-    font-weight: lighter;
+    font-weight: bold;
+}
+
+/*Asgard*/
+.asgard-container {
+    display:flex;
+    flex-direction: row;
+}
+
+.asgard-animation {
+    margin-left: 1rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: transparent;
+    background-image: linear-gradient(to right, black, #FF8235, #30E8BF, #69cc69);
+    -webkit-background-clip: text;
+    -webkit-background-size: 600%;
+    background-size: 600%;
+    animation: colors linear infinite;
+    animation-duration: 20s;
 }
 
 /*already have an account?*/
@@ -66,7 +116,7 @@ body {
     font-size: 1.3rem;
     font-weight: lighter;
     color: #999A9E;
-    margin: 0.6rem 0 1.7rem 0;
+    margin: 0.6rem 0 3rem 0;
 }
 
 .log-in > a {
@@ -79,7 +129,6 @@ body {
 .google-signup {
     display: flex;
     flex-direction: row;
-    
 }
 
 .google-svg {
@@ -94,7 +143,7 @@ body {
     border-radius: 5px;
     display:flex;
     align-items: center;
-    
+    cursor: pointer;
 }
 
 button > a {
@@ -113,6 +162,7 @@ button > a {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 } 
 
 /*- OR -*/
@@ -127,8 +177,8 @@ button > a {
 
 .form-container {
     border-style: hidden;
-    width: 64%;
-    height: 75%;
+    width: 30.3rem;
+    height: 41.5rem;
     margin-top: 2rem;
 }
 
@@ -140,7 +190,7 @@ button > a {
 
 #form > label {
     color: #999A9E;
-    font-weight: bold;;
+    font-weight: bold;
 }
 
 .input-fields {
@@ -152,17 +202,19 @@ button > a {
     border-color: #CCCDCF;
     border-width: 2px;
     margin-bottom: 1rem;
+    outline: none;
 }
 
 /*password and svg*/
 .password-input {
-    width: 30.5rem;
+    width: 30.2rem;
     height: 2.5rem;
     border-style: none;
     border-bottom-style: solid;
     border-color: #CCCDCF;
     border-width: 2px;
     font-size: 2rem;
+    outline: none;
 }
 
  .password-container {
@@ -174,13 +226,14 @@ button > a {
 
  .eye {
      position: absolute;
-     margin: 0.5rem 1rem 0 0 ;
-     color: gray;
+     margin: 0.5rem 1rem 0 0;
+     fill: gray;
+     cursor: pointer;
  }
 
 /*password strength*/
 .password-strength {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 .password-lines {
     display: flex;
@@ -208,25 +261,41 @@ button > a {
 .checkbox-info {
     color: #999A9E;
     font-weight: bold;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .checkbox-info > a{
     text-decoration: none;
     color: #7FADF7;
     font-weight: bold;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
 }
 
 /*button form*/
 .button {
-    width: 30.2rem;
+    width: 30.3rem;
     height: 3rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     border-radius: 5px;
-    background-color: orangered;
     color: white;
     border-style: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #FF8235;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF8235, #30E8BF, #69CC99);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF8235, #30E8BF, #69CC99); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 1000%;
+    background-position: left;
+    transition: 1s;
+}
+
+.button:hover {
+    background-position: right;
 }
