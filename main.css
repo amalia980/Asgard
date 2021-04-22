@@ -11,16 +11,12 @@
 	    background-position: 0% 100%;
     }
 
-    25% {
-        background-position: 100% 100%;
-    }
-
     50% {
-        background-position: 0% 100%;
+        background-position: 100% 0%;
     }
 
     100% {
-        background-position: 100% 0%;
+        background-position: 0% 100%;
     }
 }
 
@@ -103,12 +99,11 @@ header > p {
     font-size: 2.8rem;
     font-weight: bold;
     color: transparent;
-    background-image: linear-gradient(to right, black, #FF8235, #30E8BF, #69cc69);
+    background-image: linear-gradient(to right, black, #FF8235, #30E8BF, #69cc69, #30E8BF, #FF8235, black);
     -webkit-background-clip: text;
-    -webkit-background-size: 600%;
-    background-size: 600%;
-    animation: colors linear infinite;
-    animation-duration: 20s;
+    -webkit-background-size: 2500%;
+    background-size: 2500%;
+    animation: colors 20s linear infinite;
 }
 
 /*already have an account?*/

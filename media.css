@@ -1,184 +1,4 @@
-/*phone X 375x850*/
-@media all and (max-width: 376px) {
-/*wrapper for flex*/
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        width: 100%
-    }
-/*top picture*/
-    .split-left {
-        flex: 1;
-        background-size: 100vw;
-        min-height: 25%;
-    }
 
-    /*Asgard*/
-    header > h2 {
-        margin: 0.5rem 0 0 0.5rem;
-        font-size: 1rem;
-    }
-    
-    /*a cloud based community..*/ 
-    header > p {
-        display: none;
-    }
-
-    .split-right {
-        display: flex;
-        height: 80%;
-        width: 100%;
-       margin-top: 0.5rem;
-    }
-
-    /*dropdown*/
-    .dropdown {
-        display: none;
-    }
-
-    /*form*/
-    .form-container {
-        margin-top: 0;
-        width: 20rem;
-    }
-
-    /*Sign up to*/
-    .sign-asgard {
-        font-size: 1.5rem;
-    }
-
-    .asgard-animation {
-        font-size: 1.5rem;
-    }
-
-    /*already have an account?*/
-    .log-in {
-        font-size: 0.9rem;
-        margin: 0.6rem 0 2rem 0;
-    }
-
-    /*google sign up*/
-    .google-button {
-        width: 12rem;
-    }
-
-    .input-fields {
-        width: 20rem;
-    }
-
-    .password-input {
-        width: 20rem;
-    }
-
-    .eye {
-        margin: 0.5rem 0 0.5rem 0 0;
-    }
-
-    .line {
-        width: 4.5rem;
-    }
-
-    .line-4 {
-        width: 4.5rem;
-    }
-
-    .checkbox-info {
-        font-size: 0.9rem;
-    }
-
-    .button {
-        width: 20rem;
-        margin-top: 2rem;
-    }
-}
-
-@media all and (max-width: 425px) {
-     /*wrapper for flex*/
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        width: 100%
-    }
-
-    /*top picture*/
-    .split-left {
-        flex: 1;
-        background-size: 100vw;
-        min-height: 25%;
-    }
-
-       /*Asgard*/
-       header > h2 {
-        margin: 1rem 0 0 1rem;
-        font-size: 1.3rem;
-    }
-
-    /*a cloud based community..*/ 
-    header > p {
-        display: none;
-    }
-    
-    .split-right {
-        display: flex;
-        height: 75%;
-        width: 100%;
-       margin-top: 0.5rem;
-    }
-    
-    /*dropdown*/
-     .dropdown {
-        display: none;
-    }
-
-    /*form*/
-    .form-container {
-        margin-top: 2rem;
-        width: 24rem;
-    }
-
-    /*Sign up to*/
-    .sign-asgard {
-        font-size: 1.8rem;
-    }
-
-    .asgard-animation {
-        font-size: 1.8rem;
-    }
-
-    /*already have an account?*/
-    .log-in {
-        font-size: 1.2rem;
-        margin: 0.6rem 0 1.5rem 0;
-    }
-
-    /*google sign up*/
-    .google-button {
-        width: 16rem;
-    }
-
-    .input-fields {
-        width: 24rem;
-    }
-
-    .line {
-        width: 5rem;
-    }
-
-    .line-4 {
-        width: 5rem;
-    }
-
-    .checkbox-info {
-        font-size: 0.9rem;
-    }
-
-    .button {
-        width: 24rem;
-        margin-top: 2rem;
-    }
-}
 
 /*tablet*/
 @media all and (max-width: 768px) {
@@ -206,3 +26,202 @@
         padding-bottom: 2rem;
     }
 }
+
+/*mobile L*/
+@media all and (max-width: 425px) {
+    /*wrapper for flex*/
+   .wrapper {
+       display: flex;
+       flex-direction: column;
+       height: 100vh;
+       width: 100%
+   }
+
+   /*top picture*/
+   .split-left {
+       flex: 1;
+       background-size: 100vw;
+       min-height: 25%;
+   }
+
+      /*Asgard*/
+      header > h2 {
+       margin: 1rem 0 0 1rem;
+       font-size: 1.3rem;
+   }
+
+   /*a cloud based community..*/ 
+   header > p {
+       display: none;
+   }
+   
+   .split-right {
+       display: flex;
+       height: 75%;
+       width: 100%;
+      margin-top: 0.5rem;
+   }
+   
+   /*dropdown*/
+    .dropdown {
+       display: none;
+   }
+
+   /*form*/
+   .form-container {
+       padding-top: 2rem;
+       width: 24rem;
+   }
+
+   /*Sign up to*/
+   .sign-asgard {
+       font-size: 1.8rem;
+   }
+
+   .asgard-animation {
+       font-size: 1.8rem;
+       margin-left: 0.5rem;
+   }
+
+   /*already have an account?*/
+   .log-in {
+       font-size: 1.2rem;
+       margin: 0.6rem 0 1.5rem 0;
+   }
+
+   /*google sign up*/
+   .google-button {
+       width: 16rem;
+   }
+   .input-fields,.password-input  {
+       width: 24rem;
+   }
+
+   .line,.line-4  {
+       width: 5rem;
+   }
+
+   .checkbox-info {
+       font-size: 0.9rem;
+   }
+
+   .button {
+       width: 24rem;
+       margin-top: 2rem;
+   }
+}
+
+/*phone X 375x850*/
+@media all and (max-width: 375px) {
+
+    /*top picture*/
+        .split-left {
+            flex: 1;
+            background-size: 100vw;
+            height: 25%;
+        }
+    
+        /*Asgard*/
+        header > h2 {
+            margin: 0.5rem 0 0 0.5rem;
+            font-size: 1rem;
+        }
+        
+        /*a cloud based community..*/ 
+        header > p {
+            display: none;
+        }
+    
+        .split-right {
+            display: flex;
+            height: 80%;
+            width: 100vw;
+        }
+    
+        /*dropdown*/
+        .dropdown {
+            display: none;
+        }
+    
+        /*form*/
+        .form-container {
+            margin-top: 0;
+            width: 21rem;
+            margin-top: 1rem;
+        }
+    
+        /*Sign up to*/
+        .sign-asgard {
+            font-size: 1.5rem;
+        }
+    
+        .asgard-animation {
+            font-size: 1.5rem;
+            margin-left: 0.5rem;
+        }
+    
+        /*already have an account?*/
+        .log-in {
+            font-size: 0.9rem;
+            margin: 0.6rem 0 2rem 0;
+        }
+    
+        /*google sign up*/
+        .google-button {
+            width: 13rem;
+        }
+    
+        .input-fields,.password-input {
+            width: 21rem;
+        }
+    
+        .eye {
+            margin: 0.5rem 0 0.5rem 0 0;
+        }
+    
+        .line,.line-4 {
+            width: 4.5rem;
+        }
+    
+        .checkbox-info {
+            font-size: 0.9rem;
+        }
+    
+        .button {
+            width: 21rem;
+            margin-top: 2rem;
+        }
+    }    
+
+/*phone S 320*/
+@media all and (max-width: 320px) {
+     /*form*/
+     .form-container {
+        margin-top: 0;
+        width: 18rem;
+        margin-top: 1rem;
+    }
+
+    .asgard-animation {
+        margin-left: 0.5rem;
+    }
+
+    /*google sign up*/
+    .google-button {
+        width: 10.3rem;
+    }
+
+    .input-fields,.password-input {
+        width: 18rem;
+    }
+
+    .button {
+        width: 18rem;
+        margin-top: 2rem;
+    }
+
+    .line,.line-4 {
+        width: 4rem;
+    }
+}
+
