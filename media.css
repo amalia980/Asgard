@@ -211,6 +211,10 @@
         width: 10.3rem;
     }
 
+    .anchor-google {
+        font-size: .75rem;
+    }
+
     .input-fields,.password-input {
         width: 18rem;
     }

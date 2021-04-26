@@ -44,6 +44,12 @@ body {
 /*Asgard*/
 header > h2 {
     margin: 2rem 0 0 2rem;
+    color: transparent;
+    background-image: linear-gradient(to right, black, #FF8235, #30E8BF, #69cc69, #30E8BF, #FF8235, black);
+    -webkit-background-clip: text;
+    -webkit-background-size: 2500%;
+    background-size: 2500%;
+    animation: colors 20s linear infinite;
 }
 /*a cloud based community..*/
 header > p {
@@ -62,9 +68,8 @@ header > p {
 
 .split-right > .form-wrap {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: auto;
 }
 
 /*dropdown language*/
@@ -135,12 +140,13 @@ header > p {
     border-color: #D5D6D8;
     background-color: white;
     border-radius: 5px;
+    border-width: 2px;
     display:flex;
     align-items: center;
     cursor: pointer;
 }
 
-button > a {
+.anchor-google {
     text-decoration: none;
     color: black;
     margin: 0 auto;
